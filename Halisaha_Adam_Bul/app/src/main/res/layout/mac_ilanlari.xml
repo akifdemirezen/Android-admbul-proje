@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66CC00">
+
+    <TextView
+        android:text="MAÇ İLANLARI"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/textView30"
+        android:background="@drawable/txtarkaplan"
+        android:textStyle="normal|bold"
+        android:textSize="45sp"
+        android:textColor="#000000"
+        android:paddingLeft="60dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="@drawable/backgr"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:text="Ana Sayfaya Dön"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_macilanlari_anasayfa"
+            android:layout_width="150dp" />
+
+        <Button
+            android:text="Maç İlanı Ver"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_macilanlari_ilanver"
+            android:layout_marginLeft="90dp"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent" />
+    </TableRow>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgr"
+        android:id="@+id/lst" />
+
+</LinearLayout>

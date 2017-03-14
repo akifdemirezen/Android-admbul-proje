@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+
+    tools:context="com.example.akif.halisaha_adam_bul.MainActivity">
+
+    <Button
+        android:text="GİRİŞ YAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_girisyap"
+        android:layout_below="@+id/et_sifre"
+        android:layout_alignRight="@+id/et_sifre"
+        android:layout_alignEnd="@+id/et_sifre"
+        android:layout_marginTop="24dp"
+        android:layout_alignLeft="@+id/et_sifre"
+        android:layout_alignStart="@+id/et_sifre"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="ŞİFRE                 :       "
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignTop="@+id/et_sifre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/et_sifre"
+        android:paddingLeft="7dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:text="KULLANICI ADI :"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:layout_alignTop="@+id/et_Kullaniciadi"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignBottom="@+id/et_Kullaniciadi"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingTop="4dp"
+        android:paddingLeft="7dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:ems="10"
+        android:id="@+id/et_sifre"
+        android:selectAllOnFocus="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/border"
+        android:textSize="18sp"
+        android:singleLine="false"
+        android:autoText="false"
+        android:layout_marginTop="49dp"
+        android:inputType="textPassword"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:id="@+id/et_Kullaniciadi"
+        android:singleLine="false"
+        android:selectAllOnFocus="false"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/border"
+        android:textSize="18sp"
+        android:layout_marginTop="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/et_sifre"
+        android:layout_alignStart="@+id/et_sifre" />
+
+    <TextView
+        android:text="ÜYE DEĞİLSENİZ KAYIT OLMAK İÇİN TIKLAYINIZ"
+        android:layout_width="150dp"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/btn_girisyap"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/btn_girisyap"
+        android:layout_alignEnd="@+id/btn_girisyap"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="60dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="0dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:text="KAYIT OL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_kayitol"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignLeft="@+id/btn_girisyap"
+        android:layout_alignStart="@+id/btn_girisyap"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Adam Bul"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView5"
+        android:background="@drawable/txtarkaplan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        android:textColor="#000000"
+        android:autoText="true"
+        android:allowUndo="true"
+        android:capitalize="words"
+        android:textAllCaps="true"
+        android:paddingLeft="90dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/warning"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:paddingTop="2dp"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignTop="@+id/textView6"
+        android:paddingLeft="7dp" />
+
+</RelativeLayout>

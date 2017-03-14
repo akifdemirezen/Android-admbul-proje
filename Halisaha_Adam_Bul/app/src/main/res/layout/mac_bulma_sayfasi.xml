@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr">
+
+    <TextView
+        android:text="il ve ilçe bilgilerini girin ve o bölgedeki tüm maç ilanlarını görün"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="101dp"
+        android:id="@+id/textView13"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="25dp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:text="MAÇ BUL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView27"
+        android:background="@drawable/txtarkaplan"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        android:textColor="#000000"
+        android:paddingLeft="115dp" />
+
+    <TextView
+        android:text="şehir                :"
+        android:layout_width="150dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView18"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19" />
+
+    <TextView
+        android:text="İLÇE                   :"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="62dp"
+        android:id="@+id/textView19"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_height="30dp"
+        android:id="@+id/spn_macbul_ilce"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_width="200dp"
+        android:background="@drawable/border"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:id="@+id/spn_macbul_il"
+        android:background="@drawable/border"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_alignLeft="@+id/spn_macbul_ilce"
+        android:layout_alignStart="@+id/spn_macbul_ilce" />
+
+    <Button
+        android:text="İlanları Göster"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/btn_macbul_ilangoster"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="14sp"
+        android:editable="false"
+        android:textColor="#000000"
+        android:autoText="false"
+        android:textAllCaps="true"
+        android:layout_below="@+id/spn_macbul_ilce"
+        android:layout_alignRight="@+id/spn_macbul_ilce"
+        android:layout_alignEnd="@+id/spn_macbul_ilce"
+        android:layout_alignLeft="@+id/spn_macbul_ilce"
+        android:layout_alignStart="@+id/spn_macbul_ilce"
+        android:enabled="true"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Ana Sayfaya Dön"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_macbulma_anasayfadon"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/btn_macbul_ilangoster"
+        android:layout_alignBottom="@+id/btn_macbul_ilangoster"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19" />
+</RelativeLayout>

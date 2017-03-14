@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:layout_alignParentBottom="false">
+
+    <TextView
+        android:text="İsim                    :"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView22"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textView21"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21"
+        android:background="@drawable/txtarkaplan"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/txt_telefon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignLeft="@+id/txt_il"
+        android:layout_alignStart="@+id/txt_il"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:text="Şehir                 :"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView24"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:layout_alignTop="@+id/txt_il"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+    <TextView
+        android:text="telefon           :"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView26"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView23"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/txt_ilce"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignRight="@+id/btn_profil_anasayfayageridon"
+        android:layout_alignEnd="@+id/btn_profil_anasayfayageridon"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:text="Kullanıcı Adı :"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView21"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:phoneNumber="false"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="İLÇE                    :"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView25"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:layout_width="150dp"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <TextView
+        android:text="Soy İsim           :"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView23"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView22"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/txt_kullaniciadi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_alignLeft="@+id/txt_isim"
+        android:layout_alignStart="@+id/txt_isim" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/txt_isim"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:paddingLeft="15dp"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_alignLeft="@+id/txt_soyisim"
+        android:layout_alignStart="@+id/txt_soyisim" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/txt_soyisim"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_alignLeft="@+id/txt_telefon"
+        android:layout_alignStart="@+id/txt_telefon" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/txt_il"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:background="@drawable/txtarkaplan"
+        android:paddingLeft="15dp"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/txt_ilce"
+        android:layout_alignStart="@+id/txt_ilce" />
+
+    <Button
+        android:text="Anasayfaya Geri Dön"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_profil_anasayfayageridon"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/txt_ilce"
+        android:layout_toRightOf="@+id/textView25"
+        android:layout_toEndOf="@+id/textView25" />
+</RelativeLayout>

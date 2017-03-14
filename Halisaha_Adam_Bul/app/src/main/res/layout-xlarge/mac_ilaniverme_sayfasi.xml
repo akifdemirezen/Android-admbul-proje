@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009900">
+
+    <TextView
+        android:text="Maç Tarihi "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/textView16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:textSize="18sp"
+        android:background="@drawable/textborder" />
+
+    <TextView
+        android:text="Kayıt olurken kullandığınız İl ve İlçenize göre İlan  Verilecektir"
+        android:id="@+id/textView29"
+        android:layout_marginTop="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_width="370dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:textSize="18sp"
+        android:background="@drawable/textborder"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="HALISAHANIN ADI "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/btn_macilanver_tarih"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_marginTop="54dp"
+        android:textSize="18sp"
+        android:background="@drawable/textborder" />
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/et_ilanver_halisaha"
+        android:singleLine="false"
+        android:background="@drawable/border"
+        android:inputType="textPostalAddress"
+        android:selectAllOnFocus="false"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignRight="@+id/textView29"
+        android:layout_alignEnd="@+id/textView29" />
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView16"
+        android:layout_alignRight="@+id/textView29"
+        android:layout_alignEnd="@+id/textView29"
+        android:id="@+id/sp_ilanver_saat"
+        android:layout_width="200dp"/>
+
+    <Button
+        android:text="TAMAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_tarih_tamam"
+        android:layout_alignBottom="@+id/et_ekstraozellik"
+        android:layout_alignLeft="@+id/btn_macilanver_tarih"
+        android:layout_alignStart="@+id/btn_macilanver_tarih"
+        android:layout_marginBottom="7dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_ekstraozellik"
+        android:background="@drawable/border"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignLeft="@+id/et_ilanver_halisaha"
+        android:layout_alignStart="@+id/et_ilanver_halisaha"
+        android:textSize="10sp" />
+
+    <TextView
+        android:text="Ekstra aradığınız  özellikleri yazabilirsiniz"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:textSize="18sp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/textborder"
+        android:layout_below="@+id/et_ilanver_halisaha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Maç Saat Kaçta "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginTop="23dp"
+        android:textSize="18sp"
+        android:background="@drawable/textborder"
+        android:layout_below="@+id/textView29"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <DatePicker
+        android:layout_height="400dp"
+        android:id="@+id/datePicker2"
+        android:layout_width="300dp"
+        android:background="@color/common_signin_btn_dark_text_default"
+        android:visibility="invisible"
+        android:headerBackground="#33CC00"
+        android:contextClickable="false"
+        android:headerMonthTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBottom="@+id/btn_tarih_tamam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp">
+
+    </DatePicker>
+
+    <Button
+        android:text="İlan Ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ilanverme_ilanver"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        style="@android:style/Widget.Button"
+        android:layout_below="@+id/et_ekstraozellik"
+        android:layout_alignRight="@+id/et_ekstraozellik"
+        android:layout_alignEnd="@+id/et_ekstraozellik"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:text="Tarih Seçiniz"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_macilanver_tarih"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="visible"
+        android:background="@drawable/border"
+        android:layout_width="300dp"
+        android:layout_alignBaseline="@+id/textView16"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toEndOf="@+id/textView14" />
+
+
+</RelativeLayout>
